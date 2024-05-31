@@ -1,0 +1,28 @@
+{
+  "name": "easy-erp-assignment",
+  "version": "1.0.0",
+  "description": "This is assignment for Easy ERP solutions",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon ./src/server.js",
+    "build": "babel src -d dist && shx mkdir -p dist/config && shx cp src/config/config.json dist/config/config.json && shx cp src/.env dist/.env"
+  },
+  "author": "Mritunjay Paswan",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.2",
+    "pg": "^8.11.5",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.3",
+    "shx": "^0.3.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.6",
+    "@babel/core": "^7.24.6",
+    "@babel/preset-env": "^7.24.6"
+  }
+}
